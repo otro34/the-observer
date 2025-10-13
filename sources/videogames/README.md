@@ -1,0 +1,2 @@
+You will put images of videogames here. The image could be of the game itself (disc or cartdrige), the case or the box in the case of special editions. You could also have only images of the sides of the game or case (like when put on a shelf).
+You will put images of videogames here. The image could be of the game itself (disc or cartdrige), the case or the box in the case of special editions. You could also have only images of the sides of the game or case (like when put on a shelf).

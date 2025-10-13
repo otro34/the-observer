@@ -1,0 +1,1 @@
+You will put images of books, manga and comicbooks here. They could be trade paperback or collected editions, hard or softcover. Sometimes the image will include the cover, sometimes it could just be the spine. 

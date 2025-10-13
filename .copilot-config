@@ -1,0 +1,43 @@
+# GitHub Copilot Configuration
+# This file helps Copilot understand project patterns and preferences
+
+[project]
+name = "The Observer"
+type = "AI Collection Cataloging System"
+languages = ["Python", "CSV", "JSON"]
+domain = "Physical Media Collection Management"
+
+[patterns]
+# Common code patterns to follow
+csv_library = "pandas"
+api_client = "requests"
+image_processing = "PIL, opencv-cv2, pytesseract"
+error_handling = "try-except with logging"
+data_validation = "type hints with validation functions"
+
+[schemas]
+# Data schema references for code generation
+videogame_required = ["ID", "Platform", "Title"]
+book_required = ["id", "type", "title", "author"] 
+music_required = ["ID", "Title", "Artist"]
+
+[apis]
+# External API integrations
+rawg_api = "https://api.rawg.io/api"
+google_books = "Google Books API v1"
+web_search = "General web search for enrichment"
+
+[file_conventions]
+# File naming and structure conventions
+image_format = "YYYYMMDD_HHMMSS.jpg"
+id_format_games = "platform_title_##"
+id_format_books = "hash_based_unique"
+id_format_music = "vinyl_###_artist_title"
+
+[development_priorities]
+# What to focus on when generating code
+1 = "Data quality and validation"
+2 = "Error handling and resilience" 
+3 = "Batch processing capabilities"
+4 = "API rate limiting compliance"
+5 = "Resumable operations"
