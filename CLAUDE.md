@@ -50,9 +50,10 @@ The system processes collection images through these phases:
 - **Output**: Raw text data with image metadata
 - **Agent**: collection-item-identifier
 
-### Phase 2: Data Enrichment  
+### Phase 2: Data Enrichment
 - **Videogames**: RAWG API for metadata, Metacritic scores, descriptions
 - **Books/Manga**: Google Books API, web search for publisher/author info
+- **Comics (Marvel)**: Marvel API for official Marvel Comics metadata, writers, cover art
 - **Vinyls**: Web search, music databases for track listings
 - **Agent**: collection-data-enricher
 
@@ -140,6 +141,13 @@ Genres,Description,Tracklist,Price Estimate,Cover URL,Source Images,Data Source
 - **Credentials**: Configure in `docs/rarbg-api.md` 
 - **Data**: Metacritic scores, descriptions, cover art, genre info
 - **Rate Limits**: Respect API quotas
+
+### Marvel API (Marvel Comics)
+- **Endpoint**: https://gateway.marvel.com/v1/public
+- **Credentials**: Configure in `.env.marvel`
+- **Data**: Official Marvel metadata, issue numbers, writers, release dates, cover art
+- **Rate Limits**: 3,000 requests per day
+- **Use For**: Marvel-published comics only (Spider-Man, X-Men, Avengers, etc.)
 
 ### Google Books API (Books/Manga)
 - **Use For**: Author info, publication details, cover images

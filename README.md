@@ -6,7 +6,7 @@ An AI-powered collection cataloging system that transforms physical media collec
 
 - **📸 Image Processing**: Extract information from spine images, case photos, and shelf views
 - **🤖 AI-Powered Recognition**: Identify titles, platforms, and metadata from visual cues
-- **🔍 Automatic Enrichment**: Enhance data using RAWG API, Google Books, and web search
+- **🔍 Automatic Enrichment**: Enhance data using RAWG API, Marvel API, Google Books, and web search
 - **📊 Structured Catalogs**: Generate comprehensive CSV databases with rich metadata
 - **🎯 Smart Recommendations**: Curated playing/reading orders based on quality and narrative flow
 - **🌐 Multi-Language Support**: Handle English, Spanish, and Japanese releases
@@ -42,7 +42,8 @@ the-observer/
 - Python 3.8+
 - API keys for data enrichment:
   - RAWG API (videogames)
-  - Google Books API (books)
+  - Marvel API (Marvel Comics)
+  - Google Books API (books/manga)
 
 ### Setup
 
@@ -54,9 +55,13 @@ the-observer/
 
 2. **Configure API credentials**
    ```bash
-   # Edit docs/rarbg-api.md with your RAWG API key
+   # RAWG API for videogames
    echo "API KEY = your_rawg_api_key_here" > docs/rarbg-api.md
    echo "USER = your_username" >> docs/rarbg-api.md
+
+   # Marvel API for comics
+   echo "MARVEL_PUBLIC_KEY=your_public_key_here" > .env.marvel
+   echo "MARVEL_PRIVATE_KEY=your_private_key_here" >> .env.marvel
    ```
 
 3. **Add source images**
@@ -161,6 +166,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **RAWG API** for comprehensive videogame database
+- **Marvel API** for official Marvel Comics metadata
 - **Google Books API** for book metadata
 - **OCR Technologies** powering text extraction
 - **Open Source Community** for inspiration and tools
